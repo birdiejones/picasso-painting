@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: grid;
+  margin-left: 70px;
+  margin-right: 70px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 350px 20px;
+  grid-template-areas:
+    "block1 block2 block3"
+    "block4 block4 block4"
+    "block5 block5 block5";
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.header {
+  background-color: white;
+  height: 30px;
+  border: 2px solid #9f9f9f;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.header::after {
+  content: "X";
+  color: red;
+  padding-left: ;
+}
+
+.block1 {
+  background-color: #07b8b8;
+  grid-area: block1;
+}
+
+.block2 {
+  background-color: #07b8b8;
+  grid-area: block2;
+}
+.block3 {
+  background-color: #07b8b8;
+  grid-area: block3;
+}
+
+.block4 {
+  background-color: #07b8b8;
+  grid-area: block4;
+}
+
+.block5 {
+  background-color: #84fc84;
+  grid-area: block5;
+}
+
+.small-circle1 {
+  background-color: #ff9e93;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 500px;
+}
+.small-circle2 {
+  background-color: #ff9e93;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  z-index: 2;
+  m
+}
+.large-circle1 {
+  background-color: #f4e667;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  z-index: 2;
+  
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    position: absolute;
+    bottom: 0;
+}
+
+.triangle.green {
+    border-bottom: 400px solid green;
+    left: 50%;
+    z-index: 0;
+    margin-bottom: 245px;
+}
+
+.triangle.light-green {
+    border-bottom: 300px solid lightgreen;
+    left: 70%;
+    z-index: 1;
+    margin-bottom: 245px;
+}
