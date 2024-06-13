@@ -54,11 +54,15 @@ body{
 }
 
 .small-circle1 {
+    position: absolute;
+  top: 15rem;
+  left: 15rem;
+  grid-area: block1;
   background-color: #ff9e93;
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  margin-bottom: 500px;
+  
 }
 .small-circle2 {
   background-color: #ff9e93;
@@ -66,7 +70,20 @@ body{
   height: 50px;
   width: 50px;
   z-index: 2;
-  m
+  position: absolute;
+  top: 25rem;
+  left: 25rem;
+}
+
+.small-circle3 {
+  background-color: #f4e667;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: 2;
+  position: absolute;
+  left: 10rem;
+
 }
 .large-circle1 {
   background-color: #f4e667;
@@ -74,7 +91,9 @@ body{
   height: 200px;
   width: 200px;
   z-index: 2;
-  
+  position: absolute;
+  grid-area: block2;
+  left: 25rem;
 }
 
 .triangle {
